@@ -1,3 +1,11 @@
+##
+# Derivative products
+##
+envelope.rda
+fig_timeseries.pdf
+stats.*
+rise_decay*
+
 # History files
 .Rhistory
 .Rapp.history
