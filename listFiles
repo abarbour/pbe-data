@@ -16,7 +16,7 @@ ls 20??/*/*/bsmdata_nfo.rda > /tmp/tmpfilist2
 cat /tmp/tmpfilist2 | awk 'BEGIN{
 	FS="/"
 	#      2005.323_5.3 B001 raw  data....
-	printf"eqid         sta4 type rdafile\n"
+	#printf"eqid         sta4 type rdafile\n"
 }{
 	print $2,$3,"nfo ",$0
 }'
