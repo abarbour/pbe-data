@@ -2,8 +2,8 @@
 
 This is the full dataset of Plate Boundary Observatory borehole strain timeseries from Barbour and Crowell (2016) "Dynamic Strains for Earthquake Source Characterization".
 
-For each earthquake-station pair the data are in ![R](https://www.r-project.org/)'s
-![binary format](https://stat.ethz.ch/R-manual/R-devel/library/base/html/save.html), with one
+For each earthquake-station pair the data are in [R](https://www.r-project.org/)'s
+[binary format](https://stat.ethz.ch/R-manual/R-devel/library/base/html/save.html), with one
 file (`'bsmdata.rda'`) representing the timeseries of linear gauge strain ( in 10<sup>-9 </sup>), and another 
 file (`'bsmdata_nfo.rda'`) representing metadata associated with the timeseries. We also include a
 pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference. Here, for example, is the timeseries at B084 for the
