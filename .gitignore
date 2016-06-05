@@ -6,6 +6,9 @@ fig_timeseries.pdf
 stats.*
 rise_decay*
 
+#
+._*.R
+
 # History files
 .Rhistory
 .Rapp.history
