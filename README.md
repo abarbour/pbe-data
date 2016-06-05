@@ -14,6 +14,10 @@ showing peak strains of nearly 15 &#215; 10<sup>-6</sup> (microstrain).
 
 ## How to get this data
 
+Download the full archive here: https://github.com/abarbour/pbe-data/archive/master.zip
+
+Or use version control. With `git` the command is:
+
 	git clone git@github.com:abarbour/pbe-data.git
 
 The total size of this repository is on the order of 800 Mb, so the first clone will take a considerable amount of time. The size can be minimized slightly 
