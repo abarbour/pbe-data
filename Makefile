@@ -1,11 +1,16 @@
 EMC=2010/2010.094_7.2/B084/fig_timeseries.pdf
 EXAMP=example.png
 
-all: $(EXAMP)
+ALL=$(EXAMP)
+
+all: $(ALL)
 
 $(EXAMP): $(EMC)
 	# needs ImageMagick
-	convert $< $@
+	convert -density 200 -trim $< -quality 100 $@
+
+clean:
+	rm -f $(ALL)
 
 cleandirs:
 	find . -type d -empty -delete
