@@ -20,5 +20,6 @@ Or use version control (git, Subversion, etc.):
 
 	git clone git@github.com:abarbour/pbe-data.git
 
-The total size of this repository is on the order of 800 Mb, so the first clone will take a considerable amount of time. The size can be minimized slightly 
+The total size of this repository is on the order of 800 Mb, so the first 
+fetch will take a considerable amount of time. The size can be minimized slightly 
 by replacing `git clone` with `git clone --depth 1` in the expression above.
