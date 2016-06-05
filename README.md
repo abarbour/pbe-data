@@ -14,6 +14,8 @@ showing peak strains of nearly 15 &#215; 10<sup>-6</sup> (microstrain).
 
 ![B084-El Mayor](example.png)
 
+We have included a sample R script [`plot_bsmdata.R`](plot_bsmdata.R) to show how this figure can be reproduced.
+
 ## How to get this data
 
 Download the full archive here: https://github.com/abarbour/pbe-data/archive/master.zip
