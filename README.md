@@ -1,6 +1,8 @@
 # pbe-data
 
-This is the full dataset of Plate Boundary Observatory borehole strain timeseries from Barbour and Crowell (2016) "Dynamic Strains for Earthquake Source Characterization".
+This is the full dataset of 
+[Plate Boundary Observatory](http://www.unavco.org/projects/major-projects/pbo/pbo.html)
+ borehole strain timeseries from Barbour and Crowell (2016) "Dynamic Strains for Earthquake Source Characterization".
 
 For each earthquake-station pair the data are in [R](https://www.r-project.org/)'s
 [binary format](https://stat.ethz.ch/R-manual/R-devel/library/base/html/save.html), with one
