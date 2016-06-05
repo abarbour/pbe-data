@@ -6,4 +6,14 @@ For each earthquake-station pair the data are in R binary format, with one file 
 
 ![B084-El Mayor](emc)
 
-[emc]: https://github.com/abarbour/pbe-data/blob/master/2010/2010.094_7.2/B084/fig_timeseries.pdf "B084-El Mayor Cucapah"
+## How to get this data
+
+   git clone git@github.com:abarbour/pbe-data.git
+
+or
+
+  git clone https://github.com/abarbour/pbe-data.git
+
+The total size of this repository is on the order of 800 Mb, so the first clone will take a considerable amount of time. This can be minimized by replacing `git clone` with `git clone --depth 1` in the expression above.
+
+[emc]: emc.png "B084-El Mayor Cucapah"
