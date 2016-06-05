@@ -44,7 +44,7 @@ plot.hfbsm <- function(x, win=NULL, custom=TRUE, sc=1, ...){
 	samp <- attr(x, 'frequency')
 	stopifnot(frequency(Dat) == samp)
 	lbl <- sprintf("%s (%s Hz%s)", station, samp, ifelse(sc!=1, sprintf(", scaled by %s", sc), ""))
-	plot(`Strain data`, xlab=sprintf("Seconds from %s", as.character(ti)), panel=.panel, ...)
+	plot(`Strain data`, xlab=sprintf("Time, seconds from %s", as.character(ti)), panel=.panel, ...)
 	mtext(lbl, adj=0.5, line=1)
 }
 
