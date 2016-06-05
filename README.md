@@ -2,7 +2,12 @@
 
 This is the full dataset of Plate Boundary Observatory borehole strain timeseries from Barbour and Crowell (2016) "Dynamic Strains for Earthquake Source Characterization".
 
-For each earthquake-station pair the data are in R binary format, with one file ('bsmdata.rda') representing the timeseries of linear gauge strain (in 10<sup>-9</sup>), and another file ('bsmdata_nfo.rda') representing metadata associated with the timeseries. We also include a pdf figure of the timeseries in ('fig_timeseries.pdf') for reference. Here, for example, is the timeseries at B084 for the 2010 Mw 7.2 El Mayor Cucapah earthquake.
+For each earthquake-station pair the data are in R binary format, with one
+file (`'bsmdata.rda'`) representing the timeseries of linear gauge strain (in 10<sup>-9</sup>), and another 
+file (`'bsmdata_nfo.rda'`) representing metadata associated with the timeseries. We also include a
+pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference. Here, for example, is the timeseries at B084 for the
+2010 M<sub>W</sub> 7.2 El Mayor Cucapah earthquake
+showing peak strains of nearly 15 &#215; 10<sup>-6</sup> (microstrain).
 
 ![B084-El Mayor](example.png)
 
