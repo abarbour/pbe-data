@@ -7,7 +7,7 @@ all: $(ALL)
 
 $(EXAMP): $(EMC)
 	# needs ImageMagick
-	convert -density 200 -trim $< -quality 100 $@
+	convert -density 300 -trim $< -quality 100 $@
 
 clean:
 	rm -f $(ALL)
