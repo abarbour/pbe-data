@@ -86,7 +86,7 @@ and so on.
 files by the earthquake and station identifiers. This includes both
 the raw data and metadata files:
 
-```sh
+```console
 $ listFiles | head -5
 eqid         sta4 type rdafile
 2005.323_5.3 B001 raw  2005/2005.323_5.3/B001/bsmdata.rda
@@ -95,7 +95,7 @@ eqid         sta4 type rdafile
 2005.323_5.3 B006 raw  2005/2005.323_5.3/B006/bsmdata.rda
 ```
 
-```c
+```console
 $ listFiles | tail -5
 2014.072_5.5 B040 nfo  2014/2014.072_5.5/B040/bsmdata_nfo.rda
 2014.072_5.5 B045 nfo  2014/2014.072_5.5/B045/bsmdata_nfo.rda
