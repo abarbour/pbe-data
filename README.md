@@ -50,7 +50,9 @@ List of 3
  - attr(*, "class")= chr [1:2] "hfbsm" "lin"
 ```
 
-Relative strains are in `B[['srcdat']]`, which is a standard `stats::ts` object:
+Relative strains are in `B[['srcdat']]`, which is a standard 
+[`stats::ts`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/ts.html)
+object:
 ```r
 > class(B[['srcdat']])
 [1] "mts"    "ts"     "matrix"
