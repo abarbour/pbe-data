@@ -31,7 +31,6 @@ Loading objects:
 ```
 
 The object `B` has a class and structure of:
-
 ```r
 > class(B)
 [1] "hfbsm" "lin"
@@ -50,11 +49,12 @@ List of 3
  - attr(*, "class")= chr [1:2] "hfbsm" "lin"
 ```
 
-Relative strains are in `B[['srcdat']]`, which has a class of
+Relative strains are in `B[['srcdat']]`, which is a standard `stats::ts` object:
 ```r
 > class(B[['srcdat']])
 [1] "mts"    "ts"     "matrix"
 ```
+See ```{r}help(ts)``` for more information.
 
 ### `bsmdata_nfo.rda`
 
