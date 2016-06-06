@@ -44,7 +44,7 @@ List of 3
  - attr(*, "sta4")= chr "B084"
  - attr(*, "file")= chr "B084.ALL_20.l.txt"
  - attr(*, "frequency")= num 20
- - attr(*, "cmd")= chr "/Users/abarbour/kook.processing/R/PACKAGES/strain/hfbsm/hfbsm B084 pinyon084bcs2006 2010 094 '22:41:09' 2010 094 '22:57:48' 20 "| __truncated__
+ - attr(*, "cmd")= chr "hfbsm B084 pinyon084bcs2006 2010 094 '22:41:09' 2010 094 '22:57:48' 20 "| __truncated__
  - attr(*, "class")= chr [1:2] "hfbsm" "lin"
 ```
 
@@ -63,7 +63,7 @@ with a structure:
 ```r
 > str(b)
 List of 4
- $ cmd        : chr "/Users/abarbour/kook.processing/R/PACKAGES/strain/hfbsm/hfbsm B084 pinyon084bcs2006 2010 094 '22:41:09' 2010 094 '22:57:48' 20 "| __truncated__
+ $ cmd        : chr "hfbsm B084 pinyon084bcs2006 2010 094 '22:41:09' 2010 094 '22:57:48' 20 "| __truncated__
  $ cmd.success: logi TRUE
  $ results    :List of 5
   ..$ StationNames:List of 2
