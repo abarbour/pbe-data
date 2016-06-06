@@ -54,7 +54,7 @@ Relative strains are in `B[['srcdat']]`, which is a standard `stats::ts` object:
 > class(B[['srcdat']])
 [1] "mts"    "ts"     "matrix"
 ```
-See ```rhelp(ts)``` for more information.
+See `help(ts)` for more information.
 
 ### `bsmdata_nfo.rda`
 
