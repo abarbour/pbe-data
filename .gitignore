@@ -6,6 +6,9 @@ envelope.rda
 stats.*
 rise_decay*
 
+#
+._*.R
+
 # History files
 .Rhistory
 .Rapp.history
