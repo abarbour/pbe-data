@@ -4,7 +4,8 @@
 - [Example](#example)
 - [Data Access](#data-access)
 - [Metadata Tables](#metadata-tables)
-- [Utilities](#utilities) 
+- [Utilities](#utilities)
+
 
 ## Description
 
@@ -17,6 +18,7 @@ For each earthquake-station pair the data are in [R](https://www.r-project.org/)
 file (`'bsmdata.rda'`) representing the timeseries of strain, 
 and another file (`'bsmdata_nfo.rda'`) representing metadata associated with the timeseries. We also include a
 pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference. 
+
 
 ### `bsmdata.rda`
 
@@ -110,6 +112,7 @@ List of 4
 
 The command used is in `b[['cmd']]`, for example.
 
+
 ## Example
 
 Here, for example, is the timeseries at B084 for the
@@ -122,16 +125,16 @@ shown in the appropriate [fig_timeseries.pdf](2010/2010.094_7.2/B084/fig_timeser
 We have included a sample R script [`plot_bsmdata.R`](plot_bsmdata.R) to show how 
 a similar version of this figure can be reproduced.
 
+
 ## Data Access
 
-Download the full archive here: https://github.com/abarbour/pbe-data/archive/master.zip
-
-Or use version control (git, Subversion, etc.):
+Download the full archive through the link above, or
+use version control (git, Subversion, etc.) to maintain a local copy:
 
 	git clone git@github.com:abarbour/pbe-data.git
 
 The total size of this repository is on the order of 800 Mb, so the first 
-fetch will take a considerable amount of time. The size can be minimized slightly 
+fetch through `git` will take a considerable amount of time. The size can be minimized slightly 
 by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 
@@ -197,6 +200,7 @@ $ grep -E 'B084.*2010.094' Earthquake_BSM_pairs.txt
 
 *Note the earthquake identifier is defined as `[year].[jday]_[Mw]`, with the terms
 in the brackets representing field names in the tables.*
+
 
 ## Utilities
 	
