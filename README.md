@@ -1,11 +1,12 @@
 # pbe-data contents
 
+- [Description](#description)
 - [Example](#example)
 - [Data Access](#data-access)
 - [Metadata Tables](#metadata-tables)
 - [Utilities](#utilities) 
 
-## Example
+## Description
 
 This is the full dataset of 
 [Plate Boundary Observatory](http://www.unavco.org/projects/major-projects/pbo/pbo.html)
@@ -15,7 +16,11 @@ For each earthquake-station pair the data are in [R](https://www.r-project.org/)
 [binary format](https://stat.ethz.ch/R-manual/R-devel/library/base/html/save.html), with one
 file (`'bsmdata.rda'`) representing the timeseries of linear gauge strain ( in 10<sup>-9 </sup>), and another 
 file (`'bsmdata_nfo.rda'`) representing metadata associated with the timeseries. We also include a
-pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference. Here, for example, is the timeseries at B084 for the
+pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference. 
+
+## Example
+
+Here, for example, is the timeseries at B084 for the
 2010 M<sub>W</sub> 7.2 El Mayor Cucapah earthquake
 showing peak strains of nearly 15 &#215; 10<sup>-6</sup> (microstrain).
 
