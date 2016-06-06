@@ -35,8 +35,7 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 ### [`earthquakes.txt`](earthquakes.txt)
 
 This table gives information regarding the origin times, locations (latitude, longitude, and
-depth in km), and moment magnitudes of all the earthquakes in our search. *Note that this
-list does not indicate with BSM data is available.*
+depth in km), and moment magnitudes of all the earthquakes in our search.
 
 ```fundamental
 eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
@@ -49,6 +48,8 @@ eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
 
 and so on.
 
+*Note that this list does not indicate with BSM data is available. For this
+you'll want to inspect the output of [listFiles](listFiles).*
 
 ### [`bsm_station_times.txt`](bsm_station_times.txt)
 	
