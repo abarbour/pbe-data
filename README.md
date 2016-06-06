@@ -30,11 +30,29 @@ fetch will take a considerable amount of time. The size can be minimized slightl
 by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 
-## Metadata included
+## Metadata Tables
+
+### [`earthquakes.txt`](earthquakes.txt)
+
+This table gives information regarding the origin times, locations (latitude, longitude, and
+depth in km), and moment magnitudes of all the earthquakes in our search. **Note that this
+list does not indicate with there is BSM data available.**
+
+```fundamental
+eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
+    1	2004	1	25	15	12	28.6	49.05	-127.88	12.0	5.4
+	2	2004	3	17	23	53	13.9	36.03	-121.35	12.0	4.7
+	3	2004	6	15	22	28	52.4	32.45	-117.92	12.0	5.0
+	4	2004	7	12	16	45	3.7		44.30	-124.71	20.0	4.9
+	5	2004	7	15	12	6	54.0	49.48	-127.17	18.7	5.7
+```
+
+and so on.
+
 
 ### [`bsm_station_times.txt`](bsm_station_times.txt)
 	
-This file lists the earthquake-station pairs by four-character station ID, origin time,
+This table gives the earthquake-station pairs by four-character station ID, origin time,
 and hypocentral distance in kilometers:
 
 ```fundamental
@@ -48,24 +66,10 @@ B006 2004 1 25 15 12 29 341.36
 
 and so on.
 
-### [`earthquakes.txt`](earthquakes.txt)
-
-This file gives information regarding the earthquake origin time, location, and magnitude.
-
-```fundamental
-eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
-    1	2004	1	25	15	12	28.6	49.05	-127.88	12.0	5.4
-	2	2004	3	17	23	53	13.9	36.03	-121.35	12.0	4.7
-	3	2004	6	15	22	28	52.4	32.45	-117.92	12.0	5.0
-	4	2004	7	12	16	45	3.7		44.30	-124.71	20.0	4.9
-	5	2004	7	15	12	6	54.0	49.48	-127.17	18.7	5.7
-```
-
-and so on.
 
 ### [`Earthquake_BSM_pairs.txt`](Earthquake_BSM_pairs.txt)
 
-This file is effectively a merge of `earthquakes.txt` and `bsm_station_times.txt`, except with
+This table is effectively a merge of `earthquakes.txt` and `bsm_station_times.txt`, except with
 the addition of an earthquake identifier, the sixteen-character station ID, and the Julian day of
 the origin time. The earthquake identifier is defined as `[year].[jday]_[Mw]`.
 
