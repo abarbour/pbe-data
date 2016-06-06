@@ -29,18 +29,67 @@ The total size of this repository is on the order of 800 Mb, so the first
 fetch will take a considerable amount of time. The size can be minimized slightly 
 by replacing `git clone` with `git clone --depth 1` in the expression above.
 
-2005/
-2006/
-2007/
-2008/
-2009/
-2010/
-2011/
-2012/
-2013/
-2014/
 
-Earthquake_BSM_pairs.txt*
-bsm_station_times.txt*
-earthquakes.txt*
-listFiles*
+## Metadata included
+
+	[bsm_station_times.txt](bsm_station_times.txt)
+	
+This file lists the earthquake-station pairs by four-character station ID, origin time,
+and hypocentral distance in kilometers.
+
+> sta4 year mo dy hr mi sec geodkm
+> B001 2004 1 25 15 12 29 367.79
+> B003 2004 1 25 15 12 29 296.98
+> B004 2004 1 25 15 12 29 271.42
+> B005 2004 1 25 15 12 29 341.16
+> B006 2004 1 25 15 12 29 341.36
+> ...
+
+	[earthquakes.txt](earthquakes.txt)
+
+This file gives information regarding the earthquake origin time, location, and magnitude.
+
+> eqnum	year	mo	dy	hr	mi	sec	nlat	elon	depkm	Mw
+> 1	2004	1	25	15	12	28.6	49.05	-127.88	12.0	5.4
+> 2	2004	3	17	23	53	13.9	36.03	-121.35	12.0	4.7
+> 3	2004	6	15	22	28	52.4	32.45	-117.92	12.0	5.0
+> 4	2004	7	12	16	45	3.7	44.30	-124.71	20.0	4.9
+> 5	2004	7	15	12	6	54.0	49.48	-127.17	18.7	5.7
+> ...
+
+	[Earthquake_BSM_pairs.txt](Earthquake_BSM_pairs.txt)
+
+This file is effectively a merge of `earthquakes.txt` and `bsm_station_times.txt`, except with
+the addition of an earthquake identifier, the sixteen-character station ID, and the Julian day of
+the origin time. The earthquake identifier is defined as `[year].[jday]_[Mw]`.
+	
+> year mo dy hr mi sec sta4 sta16            geodkm jday eqnum nlat  elon    depkm Mw  eqid        
+> 2004  1 25 15 12 29  B001 golbeck01bwa2005 367.79 025    1   49.05 -127.88 12.0  5.4 2004.025_5.4
+> 2004  7 12 16 45  4  B001 golbeck01bwa2005 433.24 194    4   44.30 -124.71 20.0  4.9 2004.194_4.9
+> 2004  7 15 12  6 54  B001 golbeck01bwa2005 337.13 197    5   49.48 -127.17 18.7  5.7 2004.197_5.7
+> 2004  7 19  8  1 52  B001 golbeck01bwa2005 344.81 201    6   49.60 -127.19 24.8  6.3 2004.201_6.3
+> 2004 11  2 10  2 16  B001 golbeck01bwa2005 459.27 307   14   49.17 -129.13 19.0  6.6 2004.307_6.6
+> ...
+
+## Utility scripts
+	
+[listFiles](listFiles) is a bash shell script that can be used to list
+files by the earthquake and station identifiers. This includes both
+the raw data and metadata files:
+
+
+> $ listFiles | head -5
+> eqid         sta4 type rdafile
+> 2005.323_5.3 B001 raw  2005/2005.323_5.3/B001/bsmdata.rda
+> 2005.323_5.3 B004 raw  2005/2005.323_5.3/B004/bsmdata.rda
+> 2005.323_5.3 B005 raw  2005/2005.323_5.3/B005/bsmdata.rda
+> 2005.323_5.3 B006 raw  2005/2005.323_5.3/B006/bsmdata.rda
+> ...
+
+> $ listFiles | tail -5
+> 2014.072_5.5 B040 nfo  2014/2014.072_5.5/B040/bsmdata_nfo.rda
+> 2014.072_5.5 B045 nfo  2014/2014.072_5.5/B045/bsmdata_nfo.rda
+> 2014.072_5.5 B933 nfo  2014/2014.072_5.5/B933/bsmdata_nfo.rda
+> 2014.072_5.5 B934 nfo  2014/2014.072_5.5/B934/bsmdata_nfo.rda
+> 2014.072_5.5 B935 nfo  2014/2014.072_5.5/B935/bsmdata_nfo.rda
+> ...
