@@ -30,7 +30,8 @@ Loading objects:
   B
 ```
 
-The object `B` has a class and structure of:
+The object `B` contains the strain data and timestamps, and 
+has a class and structure of:
 ```r
 > class(B)
 [1] "hfbsm" "lin"
