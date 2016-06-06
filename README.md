@@ -59,6 +59,20 @@ object:
 ```
 See `help(ts)` for more information.
 
+Missing or bad points have a value of `NA`:
+
+```r
+> summary(B[['srcdat']])
+      CH0                 CH1                CH2               CH3
+ Min.   :-4536.606   Min.   :-11318.4   Min.   :-7431.4   Min.   :-8133.7
+ 1st Qu.:   -3.286   1st Qu.:   503.1   1st Qu.: -742.6   1st Qu.: -834.5
+ Median :   49.715   Median :   578.7   Median : -691.3   Median : -783.7
+ Mean   :   48.387   Mean   :   544.7   Mean   : -648.8   Mean   : -737.0
+ 3rd Qu.:  100.776   3rd Qu.:   642.3   3rd Qu.: -618.9   3rd Qu.: -721.4
+ Max.   : 4157.278   Max.   : 14841.8   Max.   : 7151.3   Max.   : 5753.5
+ NA's   :233         NA's   :177        NA's   :219       NA's   :179
+```
+
 ### `bsmdata_nfo.rda`
 
 These files contain metadata which may be useful for reconstructing the strain data, including
