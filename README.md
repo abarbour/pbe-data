@@ -37,15 +37,15 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 This file lists the earthquake-station pairs by four-character station ID, origin time,
 and hypocentral distance in kilometers.
 
-        ```c
-        sta4 year mo dy hr mi sec geodkm
+```c
+    sta4 year mo dy hr mi sec geodkm
         B001 2004 1 25 15 12 29 367.79
         B003 2004 1 25 15 12 29 296.98
         B004 2004 1 25 15 12 29 271.42
         B005 2004 1 25 15 12 29 341.16
         B006 2004 1 25 15 12 29 341.36
         ...
-        ```
+```
 
 [`earthquakes.txt`](earthquakes.txt)
 
