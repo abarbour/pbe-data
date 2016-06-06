@@ -32,7 +32,7 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 ## Metadata included
 
-	[bsm_station_times.txt](bsm_station_times.txt)
+[`bsm_station_times.txt`](bsm_station_times.txt)
 	
 This file lists the earthquake-station pairs by four-character station ID, origin time,
 and hypocentral distance in kilometers.
@@ -45,7 +45,7 @@ and hypocentral distance in kilometers.
 > B006 2004 1 25 15 12 29 341.36
 > ...
 
-	[earthquakes.txt](earthquakes.txt)
+[`earthquakes.txt`](earthquakes.txt)
 
 This file gives information regarding the earthquake origin time, location, and magnitude.
 
@@ -57,7 +57,7 @@ This file gives information regarding the earthquake origin time, location, and 
 > 5	2004	7	15	12	6	54.0	49.48	-127.17	18.7	5.7
 > ...
 
-	[Earthquake_BSM_pairs.txt](Earthquake_BSM_pairs.txt)
+[`Earthquake_BSM_pairs.txt`](Earthquake_BSM_pairs.txt)
 
 This file is effectively a merge of `earthquakes.txt` and `bsm_station_times.txt`, except with
 the addition of an earthquake identifier, the sixteen-character station ID, and the Julian day of
