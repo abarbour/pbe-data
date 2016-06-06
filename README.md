@@ -20,7 +20,7 @@ pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference.
 
 ### `bsmdata.rda`
 
-This file contains timeseries of linear strain ( in 10<sup>-9 </sup>, or *nanostrain* ) 
+These files contain timeseries of linear strain ( in 10<sup>-9 </sup>, or *nanostrain* ) 
 for each of the four gauges at a particular station, where extension is positive. 
 This can be loaded into an R environment, for example, with:
 
@@ -30,9 +30,11 @@ Loading objects:
   B
 ```
 
-with a structure:
+The object `B` has a class and structure of:
 
 ```r
+> class(B)
+[1] "hfbsm" "lin"
 > str(B)
 List of 3
  $ srcdat  : Time-Series [1:19200, 1:4] from 1 to 961: 0 0 0.0427 0.0853 0.0853 ...
@@ -48,8 +50,16 @@ List of 3
  - attr(*, "class")= chr [1:2] "hfbsm" "lin"
 ```
 
+Relative strains are in `B[['srcdat']]`, which has a class of
+```r
+> class(B[['srcdat']])
+[1] "mts"    "ts"     "matrix"
+```
+
 ### `bsmdata_nfo.rda`
 
+These files contain metadata which may be useful for reconstructing the strain data, including
+the command used, url of the original data, and version of python used at assembly time.
 This can be loaded into an R environment, for example, with:
 
 ```r
@@ -58,7 +68,7 @@ Loading objects:
   b
 ```
 
-with a structure:
+The object `b` has a class and structure of:
 
 ```r
 > str(b)
