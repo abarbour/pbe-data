@@ -159,7 +159,7 @@ and so on.
 *Note that this list does not indicate with BSM data is available; for this
 you'll want to inspect the output of* [listFiles](#listfiles)
 
-### [`bsm_station_times.txt`](bsm_station_times.txt)
+### [bsm_station_times.txt](bsm_station_times.txt)
 	
 This table gives the earthquake-station pairs by four-character station ID, origin time,
 and hypocentral distance in kilometers:
