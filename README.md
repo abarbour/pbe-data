@@ -20,9 +20,9 @@ pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference.
 
 ### `bsmdata.rda`
 
-This file contains timeseries of linear strain ( in 10<sup>-9 </sup>, or *nanostrain* ) for
-each of the four gauges at a particular station, where extension is positive. This can be
-loaded into an R environment, for example, with:
+This file contains timeseries of linear strain ( in 10<sup>-9 </sup>, or *nanostrain* ) 
+for each of the four gauges at a particular station, where extension is positive. 
+This can be loaded into an R environment, for example, with:
 
 ```r
 > load('bsmdata.rda', verbose=TRUE)
@@ -30,7 +30,56 @@ Loading objects:
   B
 ```
 
+with a structure:
+
+```r
+> str(B)
+List of 3
+ $ srcdat  : Time-Series [1:19200, 1:4] from 1 to 961: 0 0 0.0427 0.0853 0.0853 ...
+  ..- attr(*, "dimnames")=List of 2
+  .. ..$ : NULL
+  .. ..$ : chr [1:4] "CH0" "CH1" "CH2" "CH3"
+ $ Datetime: POSIXct[1:19200], format: "2010-04-04 22:41:00" "2010-04-04 22:41:00" ...
+ $ RelInd  : num [1:19200] 20 40 60 80 100 120 140 160 180 200 ...
+ - attr(*, "sta4")= chr "B084"
+ - attr(*, "file")= chr "B084.ALL_20.l.txt"
+ - attr(*, "frequency")= num 20
+ - attr(*, "cmd")= chr "/Users/abarbour/kook.processing/R/PACKAGES/strain/hfbsm/hfbsm B084 pinyon084bcs2006 2010 094 '22:41:09' 2010 094 '22:57:48' 20 "| __truncated__
+ - attr(*, "class")= chr [1:2] "hfbsm" "lin"
+```
+
 ### `bsmdata_nfo.rda`
+
+This can be loaded into an R environment, for example, with:
+
+```r
+> load('bsmdata_nfo.rda',verbose=TRUE)
+Loading objects:
+  b
+```
+
+with a structure:
+
+```r
+> str(b)
+List of 4
+ $ cmd        : chr "/Users/abarbour/kook.processing/R/PACKAGES/strain/hfbsm/hfbsm B084 pinyon084bcs2006 2010 094 '22:41:09' 2010 094 '22:57:48' 20 "| __truncated__
+ $ cmd.success: logi TRUE
+ $ results    :List of 5
+  ..$ StationNames:List of 2
+  .. ..$ sta4 : chr "B084"
+  .. ..$ sta16: chr "pinyon084bcs2006"
+  ..$ DT          :List of 2
+  .. ..$ from: chr "2010 094 22 41"
+  .. ..$ to  : chr "2010 094 22 57"
+  ..$ SamplingHz  : num 20
+  ..$ URLsrc      : chr "ftp://www.ncedc.org/pub/pbo/strain/raw/bsm/pinyon084bcs2006/2010/094"
+  ..$ files       :List of 2
+  .. ..$ rawfi: chr "B084.ALL_20.r.txt"
+  .. ..$ linfi: chr "B084.ALL_20.l.txt"
+ $ python     : chr [1:4] "CPython" "2.7.3" "('default', 'Jun 14 2013 18:17:36')" "GCC 4.2.1 (Apple Inc. build 5666) (dot 3)"
+ - attr(*, "class")= chr "hfbsm.nfo"
+```
 
 ## Example
 
