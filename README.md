@@ -32,7 +32,7 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 ## Metadata Tables
 
-### [`earthquakes.txt`](earthquakes.txt)
+### [earthquakes.txt](earthquakes.txt)
 
 This table gives information regarding the origin times, locations (latitude, longitude, and
 depth in km), and moment magnitudes of all the earthquakes in our search.
@@ -49,7 +49,7 @@ eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
 and so on.
 
 *Note that this list does not indicate with BSM data is available. For this
-you'll want to inspect the output of [listFiles](#listFiles).*
+you'll want to inspect the output of [listFiles](#listfiles).*
 
 ### [`bsm_station_times.txt`](bsm_station_times.txt)
 	
@@ -68,7 +68,7 @@ B006 2004 1 25 15 12 29 341.36
 and so on.
 
 
-### [`Earthquake_BSM_pairs.txt`](Earthquake_BSM_pairs.txt)
+### [Earthquake_BSM_pairs.txt](Earthquake_BSM_pairs.txt)
 
 This table is effectively a merge of `earthquakes.txt` and `bsm_station_times.txt`, except with
 the addition of an earthquake identifier, the sixteen-character station ID, and the Julian day of
