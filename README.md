@@ -18,6 +18,10 @@ file (`'bsmdata.rda'`) representing the timeseries of linear gauge strain ( in 1
 file (`'bsmdata_nfo.rda'`) representing metadata associated with the timeseries. We also include a
 pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference. 
 
+### `bsmdata.rda`
+
+### `bsmdata_nfo.rda`
+
 ## Example
 
 Here, for example, is the timeseries at B084 for the
