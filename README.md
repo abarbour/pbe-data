@@ -30,7 +30,7 @@ Loading objects:
   B
 ```
 
-The object `B` contains the strain data and timestamps, and 
+The loaded object `B` contains the strain data and timestamps, and 
 has a class and structure of:
 ```r
 > class(B)
@@ -71,7 +71,7 @@ Loading objects:
   b
 ```
 
-The object `b` has a class and structure of:
+The loaded object `b` contains the metadata, and has a class and structure of:
 
 ```r
 > str(b)
@@ -93,6 +93,8 @@ List of 4
  $ python     : chr [1:4] "CPython" "2.7.3" "('default', 'Jun 14 2013 18:17:36')" "GCC 4.2.1 (Apple Inc. build 5666) (dot 3)"
  - attr(*, "class")= chr "hfbsm.nfo"
 ```
+
+The command used is in `b[['cmd']]`, for example.
 
 ## Example
 
