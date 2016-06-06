@@ -26,7 +26,8 @@ pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference.
 
 Here, for example, is the timeseries at B084 for the
 2010 M<sub>W</sub> 7.2 El Mayor Cucapah earthquake
-showing peak strains of nearly 15 &#215; 10<sup>-6</sup> (microstrain).
+showing peak strains of nearly 15 &#215; 10<sup>-6</sup> (microstrain)
+shown in the appropriate [fig_timeseries.pdf](2010/2010.094_7.2/B084/fig_timeseries.pdf):
 
 ![B084-El Mayor](example.png)
 
