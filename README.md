@@ -35,29 +35,33 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 [`bsm_station_times.txt`](bsm_station_times.txt)
 	
 This file lists the earthquake-station pairs by four-character station ID, origin time,
-and hypocentral distance in kilometers.
+and hypocentral distance in kilometers:
 
 ```c
-    sta4 year mo dy hr mi sec geodkm
-        B001 2004 1 25 15 12 29 367.79
-        B003 2004 1 25 15 12 29 296.98
-        B004 2004 1 25 15 12 29 271.42
-        B005 2004 1 25 15 12 29 341.16
-        B006 2004 1 25 15 12 29 341.36
-        ...
+sta4 year mo dy hr mi sec geodkm
+B001 2004 1 25 15 12 29 367.79
+B003 2004 1 25 15 12 29 296.98
+B004 2004 1 25 15 12 29 271.42
+B005 2004 1 25 15 12 29 341.16
+B006 2004 1 25 15 12 29 341.36
 ```
+
+and so on.
 
 [`earthquakes.txt`](earthquakes.txt)
 
 This file gives information regarding the earthquake origin time, location, and magnitude.
 
-> eqnum	year	mo	dy	hr	mi	sec	nlat	elon	depkm	Mw
-> 1	2004	1	25	15	12	28.6	49.05	-127.88	12.0	5.4
-> 2	2004	3	17	23	53	13.9	36.03	-121.35	12.0	4.7
-> 3	2004	6	15	22	28	52.4	32.45	-117.92	12.0	5.0
-> 4	2004	7	12	16	45	3.7	44.30	-124.71	20.0	4.9
-> 5	2004	7	15	12	6	54.0	49.48	-127.17	18.7	5.7
-> ...
+```c
+eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
+    1	2004	1	25	15	12	28.6	49.05	-127.88	12.0	5.4
+	2	2004	3	17	23	53	13.9	36.03	-121.35	12.0	4.7
+	3	2004	6	15	22	28	52.4	32.45	-117.92	12.0	5.0
+	4	2004	7	12	16	45	3.7		44.30	-124.71	20.0	4.9
+	5	2004	7	15	12	6	54.0	49.48	-127.17	18.7	5.7
+```
+
+and so on.
 
 [`Earthquake_BSM_pairs.txt`](Earthquake_BSM_pairs.txt)
 
