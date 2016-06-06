@@ -80,7 +80,7 @@ the command used, url of the original data, and version of python used at assemb
 This can be loaded into an R environment, for example, with:
 
 ```r
-> load('bsmdata_nfo.rda',verbose=TRUE)
+> load('bsmdata_nfo.rda', verbose=TRUE)
 Loading objects:
   b
 ```
