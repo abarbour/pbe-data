@@ -89,8 +89,8 @@ $ grep -E 'B084.*2010.094' Earthquake_BSM_pairs.txt
  2010  4  4 22 41  9  B084 pinyon084bcs2006 175.83 094  112   32.31 -115.39 12.8  7.2 2010.094_7.2
 ```
 
-**Note the earthquake identifier is defined as `[year].[jday]_[Mw]`, with the terms
-in the brackets representing field names in the tables.**
+*Note the earthquake identifier is defined as `[year].[jday]_[Mw]`, with the terms
+in the brackets representing field names in the tables.*
 
 ## Utility scripts
 	
