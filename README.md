@@ -14,11 +14,21 @@ This is the full dataset of
 
 For each earthquake-station pair the data are in [R](https://www.r-project.org/)'s
 [binary format](https://stat.ethz.ch/R-manual/R-devel/library/base/html/save.html), with one
-file (`'bsmdata.rda'`) representing the timeseries of linear gauge strain ( in 10<sup>-9 </sup>, or *nanostrain* ), and another 
-file (`'bsmdata_nfo.rda'`) representing metadata associated with the timeseries. We also include a
+file (`'bsmdata.rda'`) representing the timeseries of strain, 
+and another file (`'bsmdata_nfo.rda'`) representing metadata associated with the timeseries. We also include a
 pdf figure of the timeseries in (`'fig_timeseries.pdf'`) for reference. 
 
 ### `bsmdata.rda`
+
+This file contains timeseries of linear strain ( in 10<sup>-9 </sup>, or *nanostrain* ) for
+each of the four gauges at a particular station, where extension is positive. This can be
+loaded into an R environment, for example, with:
+
+```r
+> load('bsmdata.rda', verbose=TRUE)
+Loading objects:
+  B
+```
 
 ### `bsmdata_nfo.rda`
 
