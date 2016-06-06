@@ -1,4 +1,11 @@
-# pbe-data
+# pbe-data contents
+
+- [Example](#example)
+- [Data Access](#data-access)
+- [Metadata Tables](#metadata-tables)
+- [Utilities](#utilities) 
+
+## Example
 
 This is the full dataset of 
 [Plate Boundary Observatory](http://www.unavco.org/projects/major-projects/pbo/pbo.html)
@@ -17,7 +24,7 @@ showing peak strains of nearly 15 &#215; 10<sup>-6</sup> (microstrain).
 We have included a sample R script [`plot_bsmdata.R`](plot_bsmdata.R) to show how 
 a similar version of this figure can be reproduced.
 
-## How to get this data
+## Data Access
 
 Download the full archive here: https://github.com/abarbour/pbe-data/archive/master.zip
 
@@ -93,7 +100,7 @@ $ grep -E 'B084.*2010.094' Earthquake_BSM_pairs.txt
 *Note the earthquake identifier is defined as `[year].[jday]_[Mw]`, with the terms
 in the brackets representing field names in the tables.*
 
-## Utility scripts
+## Utilities
 	
 ### [listFiles](listFiles) 
 
@@ -118,3 +125,5 @@ $ listFiles | tail -5
 2014.072_5.5 B934 nfo  2014/2014.072_5.5/B934/bsmdata_nfo.rda
 2014.072_5.5 B935 nfo  2014/2014.072_5.5/B935/bsmdata_nfo.rda
 ```
+
+[(Top)](#pbe-data-contents)
