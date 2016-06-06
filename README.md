@@ -48,8 +48,8 @@ eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
 
 and so on.
 
-*Note that this list does not indicate with BSM data is available. For this
-you'll want to inspect the output of [listFiles](#listfiles).*
+*Note that this list does not indicate with BSM data is available; for this
+you'll want to inspect the output of* [listFiles](#listfiles)
 
 ### [`bsm_station_times.txt`](bsm_station_times.txt)
 	
