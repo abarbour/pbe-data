@@ -95,7 +95,9 @@ in the brackets representing field names in the tables.*
 
 ## Utility scripts
 	
-[listFiles](listFiles) is a bash shell script that can be used to list
+###[listFiles](listFiles) 
+
+A bash shell script that can be used to list
 files by the earthquake and station identifiers. This includes both
 the raw data and metadata files:
 
