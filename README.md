@@ -78,7 +78,12 @@ year mo dy hr mi sec sta4 sta16            geodkm jday eqnum nlat  elon    depkm
 2004 11  2 10  2 16  B001 golbeck01bwa2005 459.27 307   14   49.17 -129.13 19.0  6.6 2004.307_6.6
 ```
 
-and so on.
+and so on. To find the entry for the example figure given above:
+
+```console
+$ grep -E 'B084.*2010.094' Earthquake_BSM_pairs.txt
+ 2010  4  4 22 41  9  B084 pinyon084bcs2006 175.83 094  112   32.31 -115.39 12.8  7.2 2010.094_7.2
+```
 
 ## Utility scripts
 	
