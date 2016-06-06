@@ -2,7 +2,7 @@
 # Derivative products
 ##
 envelope.rda
-fig_timeseries.pdf
+#fig_timeseries.pdf
 stats.*
 rise_decay*
 
