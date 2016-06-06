@@ -32,7 +32,7 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 ## Metadata included
 
-[`bsm_station_times.txt`](bsm_station_times.txt)
+### [`bsm_station_times.txt`](bsm_station_times.txt)
 	
 This file lists the earthquake-station pairs by four-character station ID, origin time,
 and hypocentral distance in kilometers:
@@ -68,14 +68,17 @@ and so on.
 This file is effectively a merge of `earthquakes.txt` and `bsm_station_times.txt`, except with
 the addition of an earthquake identifier, the sixteen-character station ID, and the Julian day of
 the origin time. The earthquake identifier is defined as `[year].[jday]_[Mw]`.
-	
-> year mo dy hr mi sec sta4 sta16            geodkm jday eqnum nlat  elon    depkm Mw  eqid        
-> 2004  1 25 15 12 29  B001 golbeck01bwa2005 367.79 025    1   49.05 -127.88 12.0  5.4 2004.025_5.4
-> 2004  7 12 16 45  4  B001 golbeck01bwa2005 433.24 194    4   44.30 -124.71 20.0  4.9 2004.194_4.9
-> 2004  7 15 12  6 54  B001 golbeck01bwa2005 337.13 197    5   49.48 -127.17 18.7  5.7 2004.197_5.7
-> 2004  7 19  8  1 52  B001 golbeck01bwa2005 344.81 201    6   49.60 -127.19 24.8  6.3 2004.201_6.3
-> 2004 11  2 10  2 16  B001 golbeck01bwa2005 459.27 307   14   49.17 -129.13 19.0  6.6 2004.307_6.6
-> ...
+
+```c
+year mo dy hr mi sec sta4 sta16            geodkm jday eqnum nlat  elon    depkm Mw  eqid        
+2004  1 25 15 12 29  B001 golbeck01bwa2005 367.79 025    1   49.05 -127.88 12.0  5.4 2004.025_5.4
+2004  7 12 16 45  4  B001 golbeck01bwa2005 433.24 194    4   44.30 -124.71 20.0  4.9 2004.194_4.9
+2004  7 15 12  6 54  B001 golbeck01bwa2005 337.13 197    5   49.48 -127.17 18.7  5.7 2004.197_5.7
+2004  7 19  8  1 52  B001 golbeck01bwa2005 344.81 201    6   49.60 -127.19 24.8  6.3 2004.201_6.3
+2004 11  2 10  2 16  B001 golbeck01bwa2005 459.27 307   14   49.17 -129.13 19.0  6.6 2004.307_6.6
+```
+
+and so on.
 
 ## Utility scripts
 	
@@ -84,18 +87,21 @@ files by the earthquake and station identifiers. This includes both
 the raw data and metadata files:
 
 
-> $ listFiles | head -5
-> eqid         sta4 type rdafile
-> 2005.323_5.3 B001 raw  2005/2005.323_5.3/B001/bsmdata.rda
-> 2005.323_5.3 B004 raw  2005/2005.323_5.3/B004/bsmdata.rda
-> 2005.323_5.3 B005 raw  2005/2005.323_5.3/B005/bsmdata.rda
-> 2005.323_5.3 B006 raw  2005/2005.323_5.3/B006/bsmdata.rda
-> ...
 
-> $ listFiles | tail -5
-> 2014.072_5.5 B040 nfo  2014/2014.072_5.5/B040/bsmdata_nfo.rda
-> 2014.072_5.5 B045 nfo  2014/2014.072_5.5/B045/bsmdata_nfo.rda
-> 2014.072_5.5 B933 nfo  2014/2014.072_5.5/B933/bsmdata_nfo.rda
-> 2014.072_5.5 B934 nfo  2014/2014.072_5.5/B934/bsmdata_nfo.rda
-> 2014.072_5.5 B935 nfo  2014/2014.072_5.5/B935/bsmdata_nfo.rda
-> ...
+```c
+$ listFiles | head -5
+eqid         sta4 type rdafile
+2005.323_5.3 B001 raw  2005/2005.323_5.3/B001/bsmdata.rda
+2005.323_5.3 B004 raw  2005/2005.323_5.3/B004/bsmdata.rda
+2005.323_5.3 B005 raw  2005/2005.323_5.3/B005/bsmdata.rda
+2005.323_5.3 B006 raw  2005/2005.323_5.3/B006/bsmdata.rda
+```
+
+```c
+$ listFiles | tail -5
+2014.072_5.5 B040 nfo  2014/2014.072_5.5/B040/bsmdata_nfo.rda
+2014.072_5.5 B045 nfo  2014/2014.072_5.5/B045/bsmdata_nfo.rda
+2014.072_5.5 B933 nfo  2014/2014.072_5.5/B933/bsmdata_nfo.rda
+2014.072_5.5 B934 nfo  2014/2014.072_5.5/B934/bsmdata_nfo.rda
+2014.072_5.5 B935 nfo  2014/2014.072_5.5/B935/bsmdata_nfo.rda
+```
