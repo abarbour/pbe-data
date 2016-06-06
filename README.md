@@ -37,7 +37,7 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 This file lists the earthquake-station pairs by four-character station ID, origin time,
 and hypocentral distance in kilometers:
 
-```sh
+```fundamental
 sta4 year mo dy hr mi sec geodkm
 B001 2004 1 25 15 12 29 367.79
 B003 2004 1 25 15 12 29 296.98
@@ -52,7 +52,7 @@ and so on.
 
 This file gives information regarding the earthquake origin time, location, and magnitude.
 
-```sh
+```fundamental
 eqnum	year	mo	dy	hr	mi	sec		nlat	elon	depkm	Mw
     1	2004	1	25	15	12	28.6	49.05	-127.88	12.0	5.4
 	2	2004	3	17	23	53	13.9	36.03	-121.35	12.0	4.7
@@ -69,7 +69,7 @@ This file is effectively a merge of `earthquakes.txt` and `bsm_station_times.txt
 the addition of an earthquake identifier, the sixteen-character station ID, and the Julian day of
 the origin time. The earthquake identifier is defined as `[year].[jday]_[Mw]`.
 
-```sh
+```fundamental
 year mo dy hr mi sec sta4 sta16            geodkm jday eqnum nlat  elon    depkm Mw  eqid        
 2004  1 25 15 12 29  B001 golbeck01bwa2005 367.79 025    1   49.05 -127.88 12.0  5.4 2004.025_5.4
 2004  7 12 16 45  4  B001 golbeck01bwa2005 433.24 194    4   44.30 -124.71 20.0  4.9 2004.194_4.9
