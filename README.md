@@ -140,56 +140,6 @@ by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 ## Tables
 
-### [ObservedStrains.txt](ObservedStrains.txt)
-
-This table gives the observed peak rms strain for each earthquake-station pair
-with high-frequency strain data. The table is structured as follows:
-
-```fundamental
- Station Earthquake   Mw  D.km   logE
- B001    2005.323_5.3 5.3 429.53 -8.308648
- B001    2008.118_5.2 5.2 435.56 -8.443865
- B001    2008.238_5.1 5.1 449.24 -8.955592
- B001    2008.255_5.1 5.1 446.77 -8.629519
- B001    2008.255_5.2 5.2 447.31 -8.364227
-```
-
-and so on, with columns representing
-- `'Station'`, the station identifier
-- `'Earthquake'`, the earthquake identifier
-- `'Mw'`, the moment magnitude
-- `'D.km'`, the hypocentral distance in km
-- `'logE'`, the observed peak rms strain (log)
-
-Here's an example in R, showing how
-to load these data and run a linear mixed-effects model for both
-station terms and earthquake terms:
-
-```r
-> library(lme4)
-> Obs <- read.table('ObservedStrains.txt', header=TRUE)
-> lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)
-```
-giving
-```r
-Linear mixed model fit by REML ['lmerMod']
-Formula: logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake)
-   Data: Obs
-REML criterion at convergence: -432.2024
-Random effects:
- Groups     Name        Std.Dev.
- Earthquake (Intercept) 0.2783
- Station    (Intercept) 0.1313
- Residual               0.1801
-Number of obs: 1822, groups:  Earthquake, 146; Station, 68
-Fixed Effects:
-(Intercept)           Mw  log10(D.km)
-     -9.501        1.249       -1.995
-```
-
-The *fixed* effects represent the magnitude-distance scaling,
-and the *random* effects represent the station and earthquake biases.
-
 ### [earthquakes.txt](earthquakes.txt)
 
 This table gives information regarding the origin times, locations (latitude, longitude, and
@@ -251,6 +201,57 @@ $ grep -E 'B084.*2010.094' Earthquake_BSM_pairs.txt
 *Note the earthquake identifier is defined as `[year].[jday]_[Mw]`, with the terms
 in the brackets representing field names in the tables.*
 
+
+### [ObservedStrains.txt](ObservedStrains.txt)
+
+This table gives the observed peak rms strain for each earthquake-station pair
+with high-frequency strain data used in the paper. The table is 
+structured as follows:
+
+```fundamental
+ Station Earthquake   Mw  D.km   logE
+ B001    2005.323_5.3 5.3 429.53 -8.308648
+ B001    2008.118_5.2 5.2 435.56 -8.443865
+ B001    2008.238_5.1 5.1 449.24 -8.955592
+ B001    2008.255_5.1 5.1 446.77 -8.629519
+ B001    2008.255_5.2 5.2 447.31 -8.364227
+```
+
+and so on, with columns representing
+- `'Station'`, the station identifier
+- `'Earthquake'`, the earthquake identifier
+- `'Mw'`, the moment magnitude
+- `'D.km'`, the hypocentral distance in km
+- `'logE'`, the observed peak rms strain (log)
+
+Here's an example showing how
+to load these data and run a linear mixed-effects model in R,
+accounting for both station terms and earthquake terms:
+
+```r
+> library(lme4)
+> Obs <- read.table('ObservedStrains.txt', header=TRUE)
+> lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)
+```
+giving
+```r
+Linear mixed model fit by REML ['lmerMod']
+Formula: logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake)
+   Data: Obs
+REML criterion at convergence: -432.2024
+Random effects:
+ Groups     Name        Std.Dev.
+ Earthquake (Intercept) 0.2783
+ Station    (Intercept) 0.1313
+ Residual               0.1801
+Number of obs: 1822, groups:  Earthquake, 146; Station, 68
+Fixed Effects:
+(Intercept)           Mw  log10(D.km)
+     -9.501        1.249       -1.995
+```
+
+The *fixed* effects represent the magnitude-distance scaling,
+and the *random* effects represent the station and earthquake biases.
 
 ## Utilities
 	
