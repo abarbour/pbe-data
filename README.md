@@ -218,11 +218,11 @@ structured as follows:
 ```
 
 and so on, with columns representing
-- `'Station'`, the station identifier
-- `'Earthquake'`, the earthquake identifier
-- `'Mw'`, the moment magnitude
-- `'D.km'`, the hypocentral distance in km
-- `'logE'`, the observed peak rms strain (log)
+- `Station`, the station identifier
+- `Earthquake`, the earthquake identifier
+- `Mw`, the moment magnitude
+- `D.km`, the hypocentral distance in km
+- `logE`, the observed peak rms strain (log)
 
 Here's an example showing how
 to load these data and run a linear mixed-effects model in R,
