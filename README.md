@@ -155,11 +155,11 @@ with high-frequency strain data. The table is structured as follows:
 ```
 
 and so on, with columns representing
-- `'Station'`      the station identifier
-- `'Earthquake'    the earthquake identifier
-- `'Mw'            the moment magnitude
-- `'D.km'          the hypocentral distance in km
-- `'logE'          the observed peak rms strain (log)
+- `'Station'`, the station identifier
+- `'Earthquake'`, the earthquake identifier
+- `'Mw'`, the moment magnitude
+- `'D.km'`, the hypocentral distance in km
+- `'logE'`, the observed peak rms strain (log)
 
 Here's an example in R, showing how
 to load these data and run a linear mixed-effects model for both
@@ -186,6 +186,10 @@ Fixed Effects:
 (Intercept)           Mw  log10(D.km)
      -9.501        1.249       -1.995
 ```
+
+indicating that:
+
+$\log{E} = -9.501 + 1.249 \mathbf{M} - 1.995 \log{D}$
 
 ### [earthquakes.txt](earthquakes.txt)
 
