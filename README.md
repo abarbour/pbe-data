@@ -187,9 +187,8 @@ Fixed Effects:
      -9.501        1.249       -1.995
 ```
 
-indicating that:
-
-![Strain scaling relationship](http://bit.ly/1UyDBTj)
+where the *fixed* effects represent the magnitude-distance scaling,
+and the *random* effects represent the station and earthquake biases.
 
 ### [earthquakes.txt](earthquakes.txt)
 
