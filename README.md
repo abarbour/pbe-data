@@ -170,7 +170,7 @@ station terms and earthquake terms:
 > Obs <- read.table('ObservedStrains.txt', header=TRUE)
 > lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)
 ```
-which gives:
+giving
 ```r
 Linear mixed model fit by REML ['lmerMod']
 Formula: logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake)
@@ -187,7 +187,7 @@ Fixed Effects:
      -9.501        1.249       -1.995
 ```
 
-where the *fixed* effects represent the magnitude-distance scaling,
+The *fixed* effects represent the magnitude-distance scaling,
 and the *random* effects represent the station and earthquake biases.
 
 ### [earthquakes.txt](earthquakes.txt)
