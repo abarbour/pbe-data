@@ -254,6 +254,28 @@ Fixed Effects:
 The *fixed* effects represent the magnitude-distance scaling,
 and the *random* effects represent the station and earthquake biases.
 
+### [BiasTerms.txt](BiasTerm.txt)
+
+This table gives bias terms (the *random effects* in the example above) from
+the linear mixed-effects models given in the paper. The table is 
+structured as follows:
+
+```fundamental
+ LME                    Effect     Term         Bias      Std.error
+ Station                Station    B928         -0.419    0.0671
+ Station                Station    B012         -0.371    0.0651
+ Station                Station    B927         -0.364    0.0671
+ Station                Station    B035         -0.363    0.0337
+ Station                Station    B926         -0.338    0.0693
+```
+
+and so on, with columns representing
+- `LME`, the type of lme regression done
+- `Effect`,	the random effect identifier (i.e., the group name)
+- `Term`, the identifier within the random effect group (i.e., the station name or earthquake ID)
+- `Bias`, the fixed mean bias estimate
+- `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
+
 ## Utilities
 	
 ### [listFiles](listFiles) 
