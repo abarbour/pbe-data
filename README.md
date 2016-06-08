@@ -254,7 +254,7 @@ Fixed Effects:
 The *fixed* effects represent the magnitude-distance scaling,
 and the *random* effects represent the station and earthquake biases.
 
-### [BiasTerms.txt](BiasTerm.txt)
+### [BiasTerms.txt](BiasTerms.txt)
 
 This table gives bias terms (the *random effects* in the example above) from
 the linear mixed-effects models given in the paper. The table is 
