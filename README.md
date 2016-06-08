@@ -1,4 +1,5 @@
-# pbe-data contents
+# pbe-data contents [![DOI](https://zenodo.org/badge/1277/abarbour/pbe-data.svg)](https://zenodo.org/badge/latestdoi/1277/abarbour/pbe-data)
+
 
 - [Description](#description)
 - [Example](#example)
