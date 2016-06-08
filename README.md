@@ -191,7 +191,7 @@ indicating that:
 
 $\log{E} = -9.501 + 1.249 \mathbf{M} - 1.995 \log{D}$
 
-![img]http://www.sciweavers.org/tex2img.php?eq=%5Clog%7BE%7D%20%3D%20-9.501%20%2B%201.249%20%5Cmathbf%7BM%7D%20-%201.995%20%5Clog%7BD%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0[/img]
+![img](http://www.sciweavers.org/tex2img.php?eq=%5Clog%7BE%7D%20%3D%20-9.501%20%2B%201.249%20%5Cmathbf%7BM%7D%20-%201.995%20%5Clog%7BD%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 ### [earthquakes.txt](earthquakes.txt)
 
