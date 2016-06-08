@@ -3,7 +3,7 @@
 - [Description](#description)
 - [Example](#example)
 - [Data Access](#data-access)
-- [Metadata Tables](#metadata-tables)
+- [Tables: Metadata and Peak Strains](#Tables)
 - [Utilities](#utilities)
 
 
@@ -138,7 +138,46 @@ fetch through `git` will take a considerable amount of time. The size can be min
 by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 
-## Metadata Tables
+## Tables
+
+### [ObservedStrains.txt](ObservedStrains.txt)
+
+This table gives the observed peak rms strain for each earthquake-station pair
+with high-frequency strain data. The table is structured as follows:
+
+```fundamental
+ Station Earthquake   Mw  D.km   logE
+ B001    2005.323_5.3 5.3 429.53 -8.308648
+ B001    2008.118_5.2 5.2 435.56 -8.443865
+ B001    2008.238_5.1 5.1 449.24 -8.955592
+ B001    2008.255_5.1 5.1 446.77 -8.629519
+ B001    2008.255_5.2 5.2 447.31 -8.364227
+```
+
+and so on.
+
+Here's an example in R, showing how
+to load these data and run a linear mixed-effects model for both
+station terms and earthquake terms:
+
+```r
+> library(lme4)
+> Obs <- read.table('ObservedStrains.txt', header=TRUE)
+> lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)
+Linear mixed model fit by REML ['lmerMod']
+Formula: logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake)
+   Data: Obs
+REML criterion at convergence: -432.2024
+Random effects:
+ Groups     Name        Std.Dev.
+ Earthquake (Intercept) 0.2783
+ Station    (Intercept) 0.1313
+ Residual               0.1801
+Number of obs: 1822, groups:  Earthquake, 146; Station, 68
+Fixed Effects:
+(Intercept)           Mw  log10(D.km)
+     -9.501        1.249       -1.995
+```
 
 ### [earthquakes.txt](earthquakes.txt)
 
