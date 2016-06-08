@@ -189,7 +189,7 @@ Fixed Effects:
 
 indicating that:
 
-![Strain scaling relationship](http://bit.ly/28jfy50)
+![Strain scaling relationship](http://bit.ly/1UyDBTj)
 
 ### [earthquakes.txt](earthquakes.txt)
 
