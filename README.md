@@ -270,8 +270,8 @@ structured as follows:
 ```
 
 and so on, with columns representing
-- `LME`, the type of lme regression done
-- `Effect`,	the random effect identifier (i.e., the group name)
+- `LME`, the type of lme regression done ('Station', 'Earthquake', or 'Station.and.Earthquake')
+- `Effect`,	the random effect group ('Station', or 'Earthquake')
 - `Term`, the identifier within the random effect group (i.e., the station name or earthquake ID)
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
