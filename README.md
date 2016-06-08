@@ -154,7 +154,12 @@ with high-frequency strain data. The table is structured as follows:
  B001    2008.255_5.2 5.2 447.31 -8.364227
 ```
 
-and so on.
+and so on, with columns representing
+- `'Station'`      the station identifier
+- `'Earthquake'    the earthquake identifier
+- `'Mw'            the moment magnitude
+- `'D.km'          the hypocentral distance in km
+- `'logE'          the observed peak rms strain (log)
 
 Here's an example in R, showing how
 to load these data and run a linear mixed-effects model for both
@@ -164,6 +169,9 @@ station terms and earthquake terms:
 > library(lme4)
 > Obs <- read.table('ObservedStrains.txt', header=TRUE)
 > lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)
+```
+which gives:
+```r
 Linear mixed model fit by REML ['lmerMod']
 Formula: logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake)
    Data: Obs
