@@ -1,5 +1,6 @@
-# pbe-data contents [![DOI](https://zenodo.org/badge/1277/abarbour/pbe-data.svg)](https://zenodo.org/badge/latestdoi/1277/abarbour/pbe-data)
+# pbe-data [![DOI](https://zenodo.org/badge/1277/abarbour/pbe-data.svg)](https://zenodo.org/badge/latestdoi/1277/abarbour/pbe-data)
 
+## Contents 
 
 - [Description](#description)
 - [Example](#example)
@@ -314,4 +315,4 @@ $ listFiles | tail -5
 2014.072_5.5 B935 nfo  2014/2014.072_5.5/B935/bsmdata_nfo.rda
 ```
 
-[(Top)](#pbe-data-contents)
+[(Top)](#contents)
