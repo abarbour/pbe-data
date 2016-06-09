@@ -271,11 +271,10 @@ structured as follows:
 
 and so on, with columns representing
 - `LME`, the type of lme regression done ('Station', 'Earthquake', or 'Station.and.Earthquake')
-- `Effect`,	the random effect group ('Station', or 'Earthquake')^[Note that the `Effect` terms are the same as in other tables. In other words: 'Station'=='sta4' and 'Earthquake'=='eqid'.]
+- `Effect`,	the random effect group ('Station', or 'Earthquake') <sup id="a1">[1](#f1)</sup>
 - `Term`, the identifier within the random effect group (i.e., the station name or earthquake ID)
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
-
 
 Below is a list demonstrating the meaning of the `LME` field with 
 the equivalent expression to run a linear mixed-effects model in R (with
@@ -286,6 +285,8 @@ the [lme4](https://cran.r-project.org/package=lme4) package):
 | 'Station'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Station), Obs)` |
 | 'Earthquake'	 | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
 | 'Station.and.Earthquake' | `lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)` |
+
+<b id="f1">1</b> Note that the `Effect` terms are the same as in other tables. In other words: 'Station'=='sta4' and 'Earthquake'=='eqid'. [↩](#a1)
 
 ## Utilities
 	
