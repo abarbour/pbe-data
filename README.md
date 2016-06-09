@@ -286,7 +286,7 @@ the [lme4](https://cran.r-project.org/package=lme4) package):
 | 'Earthquake'	 | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
 | 'Station.and.Earthquake' | `lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)` |
 
-<b id="f1">&#9733;</b> Note that the `Effect` terms are the same as in other tables, so 'Station'=='sta4' and 'Earthquake'=='eqid'. [&#8617;](#a1)
+<b id="f1">&#9733;</b> Note that the `Effect` terms are the same as in other tables, so 'Station'&#10234;'sta4' and 'Earthquake'='eqid'. [&#8617;](#a1)
 
 ## Utilities
 	
