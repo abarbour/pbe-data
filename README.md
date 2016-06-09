@@ -276,7 +276,7 @@ and so on, with columns representing
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
 
-_Note that the `Effect` terms are the same as in other tables. In other words: 'Station'=='sta4' and 'Earthquake'=='eqid'._
+Note that the `Effect` terms are the same as in other tables. In other words: 'Station'=='sta4' and 'Earthquake'=='eqid'.
 
 Below is a list demonstrating the meaning of the `LME` field with 
 the equivalent expression to run a linear mixed-effects model in R (with
