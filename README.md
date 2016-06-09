@@ -276,7 +276,11 @@ and so on, with columns representing
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
 
-| Value of `LME` | Command in R (`lme4` package) |
+Below is a list demonstrating the meaning of the `LME` field with 
+the equivalent expression to run a linear mixed-effects model in R (with
+the `lme4` package):
+
+| Value of `LME` | Command in R |
 |----------------|-------------------------------|
 | 'Station'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Station), Obs)` |
 | 'Earthquake'	 | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
