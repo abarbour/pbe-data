@@ -271,7 +271,7 @@ structured as follows:
 
 and so on, with columns representing
 - `LME`, the type of lme regression done ('Station', 'Earthquake', or 'Station.and.Earthquake')
-- `Effect`,	the random effect group ('Station', or 'Earthquake') <sup id="a1">[*](#f1)</sup>
+- `Effect`,	the random effect group ('Station', or 'Earthquake') <sup id="a1">[&#9733;](#f1)</sup>
 - `Term`, the identifier within the random effect group (i.e., the station name or earthquake ID)
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
@@ -286,7 +286,7 @@ the [lme4](https://cran.r-project.org/package=lme4) package):
 | 'Earthquake'	 | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
 | 'Station.and.Earthquake' | `lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)` |
 
-<b id="f1">*</b> Note that the `Effect` terms are the same as in other tables. In other words: 'Station'=='sta4' and 'Earthquake'=='eqid'. [&#8617;](#a1)
+<b id="f1">&#9733;</b> Note that the `Effect` terms are the same as in other tables. In other words: 'Station'=='sta4' and 'Earthquake'=='eqid'. [&#8617;](#a1)
 
 ## Utilities
 	
