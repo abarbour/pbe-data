@@ -278,7 +278,7 @@ and so on, with columns representing
 
 Below is a list demonstrating the meaning of the `LME` field with 
 the equivalent expression to run a linear mixed-effects model in R (with
-the `lme4` package):
+the [lme4](https://cran.r-project.org/package=lme4) package):
 
 | Value of LME | Equivalent expression in R |
 |---------------:|:------------------------------|
