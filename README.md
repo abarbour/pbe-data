@@ -279,7 +279,7 @@ and so on, with columns representing
 | Value of `LME` | Command in R (`lme4` package) |
 |----------------|-------------------------------|
 | 'Station'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Station), Obs)` |
-| 'Earthquake'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
+| 'Earthquake'	 | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
 | 'Station.and.Earthquake' | `lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)` |
 
 ## Utilities
