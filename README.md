@@ -276,11 +276,13 @@ and so on, with columns representing
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
 
++----------------+-------------------------------+
 | Value of `LME` | Command in R (`lme4` package) |
 +----------------+-------------------------------+
 | 'Station'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Station), Obs)` |
 | 'Earthquake'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
 | 'Station.and.Earthquake' | `lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)` |
++----------------+-------------------------------+
 
 ## Utilities
 	
