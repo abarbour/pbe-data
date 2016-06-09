@@ -1,6 +1,6 @@
 # pbe-data [![DOI](https://zenodo.org/badge/1277/abarbour/pbe-data.svg)](https://zenodo.org/badge/latestdoi/1277/abarbour/pbe-data)
 
-## Contents 
+## Contents
 
 - [Description](#description)
 - [Example](#example)
@@ -8,8 +8,9 @@
 - [Tables: Metadata, Peak Strains, and Bias Terms](#tables)
 - [Utilities](#utilities)
 
+----
 
-## Description [&#8617;]
+## Description
 
 This is the full dataset of 
 [Plate Boundary Observatory](http://www.unavco.org/projects/major-projects/pbo/pbo.html)
@@ -115,7 +116,7 @@ List of 4
 The command used is in `b[['cmd']]`, for example.
 
 
-## Example [&#8617;]
+## Example
 
 Here, for example, is the timeseries at B084 for the
 2010 M<sub>W</sub> 7.2 El Mayor Cucapah earthquake
@@ -140,7 +141,7 @@ fetch through `git` will take a considerable amount of time. The size can be min
 by replacing `git clone` with `git clone --depth 1` in the expression above.
 
 
-## Tables [&#8617;]
+## Tables
 
 ### [earthquakes.txt](earthquakes.txt)
 
@@ -289,7 +290,7 @@ the [lme4](https://cran.r-project.org/package=lme4) package):
 
 <b id="f1">&#9733;</b> Note that the `Effect` terms are the same as in other tables, so 'Station' &#10234; 'sta4' and 'Earthquake' &#10234; 'eqid'. [&#8617;](#a1)
 
-## Utilities [&#8617;]
+## Utilities
 	
 ### [listFiles](listFiles) 
 
