@@ -4,7 +4,7 @@
 - [Description](#description)
 - [Example](#example)
 - [Data Access](#data-access)
-- [Tables: Metadata, Peak Strains, and Bias Terms](#Tables)
+- [Tables: Metadata, Peak Strains, and Bias Terms](#tables)
 - [Utilities](#utilities)
 
 
