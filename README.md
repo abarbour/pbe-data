@@ -150,12 +150,12 @@ This table gives information regarding the origin times, locations (latitude, lo
 depth in km), and moment magnitudes of all the earthquakes in our search.
 
 ```fundamental
-eqnum	year	mo	dy	hr	mi	sec	nlat	elon	depkm	Mw
-    1	2004	1	25	15	12	28.6	49.05	-127.88	12.0	5.4
-    2	2004	3	17	23	53	13.9	36.03	-121.35	12.0	4.7
-    3	2004	6	15	22	28	52.4	32.45	-117.92	12.0	5.0
-    4	2004	7	12	16	45	3.7	44.30	-124.71	20.0	4.9
-    5	2004	7	15	12	6	54.0	49.48	-127.17	18.7	5.7
+eqnum	year	mo	dy	hr	mi      sec     nlat    elon    depkm   Mw
+    1	2004	1	25	15	12      28.6    49.05   -127.88 12.0    5.4
+    2	2004	3	17	23	53      13.9    36.03   -121.35 12.0    4.7
+    3	2004	6	15	22	28      52.4    32.45   -117.92 12.0    5.0
+    4	2004	7	12	16	45      3.7     44.30   -124.71 20.0    4.9
+    5	2004	7	15	12	6       54.0    49.48   -127.17 18.7    5.7
 ```
 
 and so on.
