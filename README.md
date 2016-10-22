@@ -242,16 +242,16 @@ giving
 Linear mixed model fit by REML ['lmerMod']
 Formula: logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake)
    Data: Obs
-REML criterion at convergence: -432.2024
+REML criterion at convergence: -400.6526
 Random effects:
  Groups     Name        Std.Dev.
- Earthquake (Intercept) 0.2783
- Station    (Intercept) 0.1313
- Residual               0.1801
-Number of obs: 1822, groups:  Earthquake, 146; Station, 68
+ Earthquake (Intercept) 0.2798
+ Station    (Intercept) 0.1309
+ Residual               0.1813
+Number of obs: 1792, groups:  Earthquake, 144; Station, 68
 Fixed Effects:
 (Intercept)           Mw  log10(D.km)
-     -9.501        1.249       -1.995
+     -9.513        1.250       -1.992
 ```
 
 The *fixed* effects represent the magnitude-distance scaling,
