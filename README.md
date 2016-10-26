@@ -314,6 +314,48 @@ is structured similarly:
 and so on, except for an additional column (`Oceanic.crust`) representing
 whether or not `C1.code` represents oceanic crust (`TRUE` == oceanic).
 
+Here is a reference table giving the description of each value possible for
+`C1.code`:
+
+|Code| Description|
+|---:|:-----------|
+|A0| oceans 3 Myr and younger|
+|A1| normal oceanic|
+|B-| melt affected oceanic crust and oceanic plateaus|
+|C-| continental shelf|
+|D-| platform|
+|E-| slow thin platform|
+|F-| Archean (Antarctica)|
+|G1| early Archean|
+|G2| late Archean|
+|H1| early/mid Proterozoic|
+|H2| early/mid Proterozoic (Antarctica, slow)|
+|I1| late Proterozoic|
+|I2| slow late Proterozoic|
+|J-| island arc|
+|K-| forearc|
+|L1| continental arc|
+|L2| slow continental arc|
+|M-| extended crust|
+|N-| fast extended crust (Antarctica)|
+|O-| orogen (Antarctica), thick upper crust, thin lower crust|
+|P-| orogen, thick upper crust, very thin lower crust|
+|Q-| orogen, thick upper crust, fast middle crust|
+|R1| orogen, slow lower crust (Andes)|
+|R2| slow orogen (Himalaya)|
+|S-| continental slope-margin transition|
+|T-| margin-continent/shield transition|
+|U-| slow margin/shield (Antarctica)|
+|V1| inactive ridge, Alpha Ridge|
+|V2| thinned continental crust, Red Sea|
+|W-| oceanic plateau with continental crust|
+|X-| rift|
+|Y1| Caspian depression|
+|Y2| intermediate continental/oceanic crust, Black Sea|
+|Y3| Caspian Sea oceanic|
+|Z1| Phanerozoic|
+|Z2| fast Phanerozoic (E. Australia, S. Africa, N. Siberia)|
+
 ## LME Expressions
 
 Below is a list demonstrating the meaning of the `LME` field with 
