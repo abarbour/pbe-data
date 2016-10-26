@@ -7,7 +7,7 @@
 - [Example](#example)
 - [Data Access](#data-access)
 - [Tables: Metadata, Peak Strains, and Bias Terms](#tables)
-- [CRUST1.0 Terms](#crust1.0)
+- [CRUST1.0 Terms](#crust10-codes)
 - [Utilities](#utilities)
 
 ----
