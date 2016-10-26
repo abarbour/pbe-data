@@ -279,6 +279,43 @@ and so on, with columns representing
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
 
+## [CRUST1.0](http://igppweb.ucsd.edu/~gabi/crust1.html) Codes
+
+The crustal rock-type classification codes for the BSMs are in [BSM_C1_Codes.txt](BSM_C1_Codes.txt); this table is 
+structured as follows:
+
+```fundamental
+ Station C1.code
+ B001    L1
+ B003    T-
+ B004    T-
+ B005    L1
+ B006    L1
+ B007    L1
+ B009    L1
+ B010    L1
+```
+and so on, with column `C1.code` representing the CRUST 1.0
+
+The classification codes for the earthquakes are in [EQS_C1_Codes.txt](EQS_C1_Codes.txt), which
+is structured similarly:
+
+```fundamental
+ Earthquake   C1.code Oceanic.crust
+ 2004.025_5.4 A1       TRUE
+ 2004.197_5.7 A1       TRUE
+ 2004.201_6.3 A1       TRUE
+ 2004.307_5.0 A0       TRUE
+ 2004.307_5.1 A0       TRUE
+ 2004.307_5.2 A1       TRUE
+ 2004.307_6.6 A0       TRUE
+ 2004.357_5.1 A0       TRUE
+```
+and so on, except for an additional column (`Oceanic.crust`) representing
+whether or not `C1.code` represents oceanic crust (`TRUE` == oceanic).
+
+## LME Expressions
+
 Below is a list demonstrating the meaning of the `LME` field with 
 the equivalent expression to run a linear mixed-effects model in R (with
 the [lme4](https://cran.r-project.org/package=lme4) package):
