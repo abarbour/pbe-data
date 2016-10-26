@@ -298,7 +298,7 @@ The crustal rock-type classification codes for the BSMs are in [BSM_C1_Codes.txt
 structured as follows:
 
 ```fundamental
- Station C1.code
+ Station C1.code.sta
  B001    L1
  B003    T-
  B004    T-
@@ -314,18 +314,22 @@ The classification codes for the earthquakes are in [EQS_C1_Codes.txt](EQS_C1_Co
 is structured similarly:
 
 ```fundamental
- Earthquake   C1.code Oceanic.crust
- 2004.025_5.4 A1       TRUE
- 2004.197_5.7 A1       TRUE
- 2004.201_6.3 A1       TRUE
- 2004.307_5.0 A0       TRUE
- 2004.307_5.1 A0       TRUE
- 2004.307_5.2 A1       TRUE
- 2004.307_6.6 A0       TRUE
- 2004.357_5.1 A0       TRUE
+ Earthquake   C1.code.eq Oceanic.crust
+ 2004.025_5.4 A1         TRUE
+ 2004.197_5.7 A1         TRUE
+ 2004.201_6.3 A1         TRUE
+ 2004.307_5.0 A0         TRUE
+ 2004.307_5.1 A0         TRUE
+ 2004.307_5.2 A1         TRUE
+ 2004.307_6.6 A0         TRUE
+ 2004.357_5.1 A0         TRUE
 ```
 and so on, except for an additional column (`Oceanic.crust`) representing
 whether or not `C1.code` represents oceanic crust (`TRUE` == oceanic).
+
+To include these classifications into the strain regression, the equivalent
+expression in R would be `lmer(logE ~ Mw + log10(D.km) + Oceanic.crust + (1 | C1.code.sta), Obs)`
+
 
 Here is a reference table giving the description of each value possible for
 `C1.code`:
