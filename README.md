@@ -318,7 +318,7 @@ Here is a reference table giving the description of each value possible for
 `C1.code`:
 
 |Code| Description|
-|---:|:-----------|
+|:--:|:-----------|
 |A0| oceans 3 Myr and younger|
 |A1| normal oceanic|
 |B-| melt affected oceanic crust and oceanic plateaus|
