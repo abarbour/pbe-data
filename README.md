@@ -328,7 +328,9 @@ and so on, except for an additional column (`Oceanic.crust`) representing
 whether or not `C1.code` represents oceanic crust (`TRUE` == oceanic).
 
 To include these classifications into the strain regression, the equivalent
-expression in R would be `lmer(logE ~ Mw + log10(D.km) + Oceanic.crust + (1 | C1.code.sta), Obs)`
+expression in R would be
+
+	lmer(logE ~ Mw + log10(D.km) + Oceanic.crust + (1 | C1.code.sta), Obs)
 
 
 Here is a reference table giving the description of each value possible for
