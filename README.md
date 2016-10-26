@@ -279,6 +279,19 @@ and so on, with columns representing
 - `Bias`, the fixed mean bias estimate
 - `Std.error`, the standard error associated with `Bias`, from the conditional covariance matrix
 
+Below is a list demonstrating the meaning of the `LME` field with 
+the equivalent expression to run a linear mixed-effects model in R (with
+the [lme4](https://cran.r-project.org/package=lme4) package):
+
+| Value of `LME` | Equivalent expression in R |
+|---------------:|:------------------------------|
+| 'Station'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Station), Obs)` |
+| 'Earthquake'	 | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
+| 'Station.and.Earthquake' | `lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)` |
+
+<b id="f1">&#9733;</b> Note that the `Effect` terms are the same as in other tables, so 'Station' &#10234; 'sta4' and 'Earthquake' &#10234; 'eqid'. [&#8617;](#a1)
+
+
 ## [CRUST1.0](http://igppweb.ucsd.edu/~gabi/crust1.html) Codes
 
 The crustal rock-type classification codes for the BSMs are in [BSM_C1_Codes.txt](BSM_C1_Codes.txt); this table is 
@@ -317,7 +330,7 @@ whether or not `C1.code` represents oceanic crust (`TRUE` == oceanic).
 Here is a reference table giving the description of each value possible for
 `C1.code`:
 
-|Code| Description|
+|`C1.code` | Description adapted from CRUST1.0 database |
 |:--:|:-----------|
 |A0| oceans 3 Myr and younger|
 |A1| normal oceanic|
@@ -356,19 +369,6 @@ Here is a reference table giving the description of each value possible for
 |Z1| Phanerozoic|
 |Z2| fast Phanerozoic (E. Australia, S. Africa, N. Siberia)|
 
-## LME Expressions
-
-Below is a list demonstrating the meaning of the `LME` field with 
-the equivalent expression to run a linear mixed-effects model in R (with
-the [lme4](https://cran.r-project.org/package=lme4) package):
-
-| Value of LME | Equivalent expression in R |
-|---------------:|:------------------------------|
-| 'Station'      | `lmer(logE ~ Mw + log10(D.km) + (1 | Station), Obs)` |
-| 'Earthquake'	 | `lmer(logE ~ Mw + log10(D.km) + (1 | Earthquake), Obs)` |
-| 'Station.and.Earthquake' | `lmer(logE ~ Mw + log10(D.km) + (1 | Station) + (1 | Earthquake), Obs)` |
-
-<b id="f1">&#9733;</b> Note that the `Effect` terms are the same as in other tables, so 'Station' &#10234; 'sta4' and 'Earthquake' &#10234; 'eqid'. [&#8617;](#a1)
 
 ## Utilities
 	
