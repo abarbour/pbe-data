@@ -327,14 +327,6 @@ is structured similarly:
 and so on, except for an additional column (`Oceanic.crust`) representing
 whether or not `C1.code` represents oceanic crust (`TRUE` == oceanic).
 
-To include these classifications into the strain regression<sup id="a1">[&#9733;](#f2)</sup>, the equivalent
-expression in R would be
-
-	lmer(logE ~ Mw + log10(D.km) + Oceanic.crust + (1 | C1.code.sta), Obs)
-
-<b id="f2">&#9733;</b> Note that these classification tables will need to be merged with the observation table [&#8617;](#a2)
-
-
 Here is a reference table giving the description of each value possible for
 `C1.code`:
 
@@ -376,6 +368,13 @@ Here is a reference table giving the description of each value possible for
 |Y3| Caspian Sea oceanic|
 |Z1| Phanerozoic|
 |Z2| fast Phanerozoic (E. Australia, S. Africa, N. Siberia)|
+
+To include these classifications into the strain regression<sup id="a1">[&#9733;](#f2)</sup>, the equivalent
+expression in R would be
+
+	lmer(logE ~ Mw + log10(D.km) + Oceanic.crust + (1 | C1.code.sta), Obs)
+
+<b id="f2">&#9733;</b> Note that these classification tables will need to be merged with the observation table [&#8617;](#a2)
 
 
 ## Utilities
