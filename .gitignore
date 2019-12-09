@@ -5,6 +5,10 @@ envelope.rda
 #fig_timeseries.pdf
 stats.*
 rise_decay*
+#eqstrains.csv.gz
+
+# VIM temp save file
+*.swp
 
 #
 ._*.R

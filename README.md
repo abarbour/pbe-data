@@ -1,4 +1,4 @@
-# pbe-data 
+# pbe-data: PBO BSM Earthquake database
 
 [![DOI](https://zenodo.org/badge/1277/abarbour/pbe-data.svg)](https://zenodo.org/badge/latestdoi/1277/abarbour/pbe-data)
 
@@ -15,8 +15,10 @@
 ## Description
 
 This is the full dataset of 
-[Plate Boundary Observatory](http://www.unavco.org/projects/major-projects/pbo/pbo.html)
- borehole strain timeseries from Barbour and Crowell (2016) "Dynamic Strains for Earthquake Source Characterization".
+[Plate Boundary Observatory](https://www.unavco.org/projects/past-projects/pbo/pbo.html)
+ borehole strain timeseries from 
+ Barbour and Crowell's SRL paper
+ [Dynamic Strains for Earthquake Source Characterization](https://doi.org/10.1785/0220160155).
 
 For each earthquake-station pair the data are in [R](https://www.r-project.org/)'s
 [binary format](https://stat.ethz.ch/R-manual/R-devel/library/base/html/save.html), with one
@@ -141,6 +143,15 @@ use version control (git, Subversion, etc.) to maintain a local copy:
 The total size of this repository is on the order of 800 Mb, so the first 
 fetch through `git` will take a considerable amount of time. The size can be minimized slightly 
 by replacing `git clone` with `git clone --depth 1` in the expression above.
+
+Convert `bsmdata.rda` to comma-separated-values with [rda2csv.R](rda2csv.R), on
+the command line:
+
+	rda2csv.R 2010/2010.094_7.2/B084/bsmdata.rda
+
+which writes to `eqstrains.csv.gz` by default.	Optionally, specify an output file:
+
+	rda2csv.R 2010/2010.094_7.2/B084/bsmdata.rda my_strain_file.csv.gz
 
 
 ## Tables
