@@ -144,7 +144,9 @@ The total size of this repository is on the order of 800 Mb, so the first
 fetch through `git` will take a considerable amount of time. The size can be minimized slightly 
 by replacing `git clone` with `git clone --depth 1` in the expression above.
 
-Convert `bsmdata.rda` to comma-separated-values with [rda2csv.R](rda2csv.R), on
+### Converting to `csv`
+
+One can convert `bsmdata.rda` to comma-separated-values with [rda2csv.R](rda2csv.R), on
 the command line:
 
 	rda2csv.R 2010/2010.094_7.2/B084/bsmdata.rda
@@ -153,6 +155,9 @@ which writes to `eqstrains.csv.gz` by default.	Optionally, specify an output fil
 
 	rda2csv.R 2010/2010.094_7.2/B084/bsmdata.rda my_strain_file.csv.gz
 
+And, with [convert_all](convert_all), one can process every `bsmdata.rda` file
+that exists in this directory. (This is a shell script that depends on `awk`
+and [listFiles](listFiles).
 
 ## Tables
 
