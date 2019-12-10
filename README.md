@@ -159,6 +159,8 @@ And, with [convert_all](convert_all), one can process every `bsmdata.rda` file
 that exists in this directory. (This is a shell script that depends on `awk`
 and [listFiles](listFiles).
 
+	convert_all | sh
+
 ## Tables
 
 ### [earthquakes.txt](earthquakes.txt)
