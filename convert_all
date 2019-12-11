@@ -2,12 +2,12 @@
 
 set -e
 
-listFiles | grep -v nfo |\
+./listFiles | grep -v nfo |\
 awk 'NR>1{
   inp = $4
   gsub("rda", "csv.gz", $4)
   outp = $4
 
-  printf"rda2csv.R %s %s\n",inp,outp
+  printf"./rda2csv.R %s %s\n",inp,outp
 
 }'
