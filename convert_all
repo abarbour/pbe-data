@@ -1,5 +1,10 @@
 #!/bin/sh
 
+#
+# simply lists the commands to process all rda files
+# use `convert_all | sh` to run the commands
+#
+
 set -e
 
 ./listFiles | grep -v nfo |\
